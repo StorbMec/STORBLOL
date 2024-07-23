@@ -1,0 +1,89 @@
+.left-menu{
+    display: flex;
+    align-items: center;
+    padding-left:1.5%;
+    flex-direction: column ;
+    /* 293 prototype / 1920 view port = 0.1526 => 15.26% of view width*/
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    /* for any retarded that has 3840+ resolution */
+    max-width: 293px;
+    min-width: 220px;
+    margin: none;
+    padding: 10px;
+    background-color: var(--left-menu-color);
+}
+
+.left-menu .left-menu-header{
+    width: 100%;
+    background: inherit;
+    height: 30%;
+
+}
+.left-menu .storb-logo{
+    width: 100%;
+    height: 50%;
+   
+}
+.left-menu .left-menu-content{
+    width: 100%;
+    margin-left: 35%;
+    
+}
+.left-menu .left-menu-footer-info {
+    margin-top: auto;
+    width: 100%;
+    background-color: inherit;
+    position: relative;
+    bottom: 0;
+    display: flex;
+}
+
+.left-menu h1 {
+    font-size: 1rem;
+}
+.left-menu .advisory{
+    margin: none;
+    padding: none;
+    font-size: 0.5rem;
+}
+.left-menu .social-media-call{
+    margin: none;
+    padding: none;
+    font-size:1rem;
+}
+.left-menu .menu-item{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.left-menu .menu-item:hover{
+    opacity: 0.5;
+}
+.left.menu .menu-option-label{
+    transition: 0.5s;
+}
+.left-menu .menu-item .menu-option-label{
+    transition: 0.5s;
+}
+.left-menu .menu-item .left-menu-navigation-icon{
+    transition: 0.5s;
+}
+
+.left-menu .menu-option-label{
+    margin-left: 10px;
+}
+.discord-redirect{
+    transition: 0.5s;
+}
+.discord-redirect:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+

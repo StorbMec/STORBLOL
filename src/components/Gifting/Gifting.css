@@ -1,0 +1,230 @@
+
+.gifting-card {
+    position: fixed;
+    background-color: var(--primary-color);  
+    border-radius: 0.9rem;
+    /* TODO: check de view port and scaling for different resolutions */
+    width: 845px;
+    height: 610px;
+    display: flex;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 26px 0px, rgba(88, 88, 88, 0.8) -6px -2px 16px 0px;
+}
+.alert-enter {
+    opacity: 0;
+    z-index: 10;
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+    z-index: 10;
+}
+
+.alert-exit {
+    opacity: 1;
+    z-index: 10;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    z-index: 10;
+    transition: opacity 300ms, transform 300ms;
+}
+.gifting-card-parameters{
+    padding-left: 40px;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    background-color: inherit;      
+    width: 50%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.gifting-card-parameters .gifting-card-header{
+    width: 100%;
+    height: 15%;
+    color: var(--text-color);
+    font-size: 0.9rem;
+
+}
+.gifting-card-parameters .gifting-card-user{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+} 
+.gifting-card-parameters .gifting-card-user .gifting-card-user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gifting-card-parameters .gifting-card-user #username, #xkey{
+    
+    padding-bottom: 25px;
+}
+.gifting-card-item-card{
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+    background-color: inherit;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+.input-x-key{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.input-x-key-show-password-button{
+    width: 30px;
+    background-color: inherit;
+    border: none;
+    transition: 0.3s;
+
+}
+.input-x-key-show-password-button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.gifting-card-item-header{
+    padding-right: 10px;
+    color: var(--text-color);
+    padding-top: 10px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gifting-card-item-header p{
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 600;   
+}
+
+.gifting-card-item .gifting-card-balance p, label{
+    color: var(--text-color);
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+    
+}
+.gifting-card-item .gifting-card-balance-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.gifting-card-item .gifting-card-balance-content p{
+    
+    padding-left: 5px;
+    font-size: 0.75rem;
+}
+.gifting-card-item .gifting-card-balance label{
+    font-weight: 600;
+}   
+
+.gifting-card-item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    width: 100%;
+    height: 90%;
+}
+.gifting-card-item .card-container {
+    width: 75%;
+    height: 100%;
+    border-radius: 0.9rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 5px 15px 0px;
+    
+}
+.gifting-card-item .gifting-card-balance{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.gifting-card .gift-card-user-decision{
+    width: 100%;
+    height: 10%;
+    padding-right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+.gift-card-maybe-letter{
+    text-decoration: underline;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding-right: 10px;
+    transition: 0.3s;
+
+}
+.gift-card-user-decision .gift-card-maybe-letter:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.gift-card-button-container{
+    width: 25%;
+    height: 70%;
+}
+
+
+.gifting-send-message-input-container-message{
+    width: 100%;
+    height: 300px;
+}
+
+.gifting-send-message-input{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: var(--input-background-color);
+    transition: 0.3s;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 0.8rem;
+}
+.gifting-send-message-input:focus{
+    outline: none;
+    background: var(--input-active-background-color);
+}
+.gifting-send-message{
+    width: 100%;
+    height: 250px;
+}
+.gifting-card-user label{
+    font-size: 0.75rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.gifting-card-close-button{
+    background-color: inherit;
+    border: none;
+    transition: 0.3s;
+}
+.gifting-card-close-button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
